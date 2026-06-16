@@ -1,5 +1,5 @@
 
-Las comunicaciones en internet se da a través de solicitudes web, pues cuando una aplicación móvil o web requiere de algún recurso hace uso de una solicitud, pero para lograrlo se tiene que utilizar del protocolo [HTTP](https://datatracker.ietf.org/doc/html/rfc2616). Se le dice hipertexto porque el usuario puede acceder a otros recursos a través de enlaces. 
+Las comunicaciones en internet se dan a través de solicitudes web, pues cuando una aplicación móvil o web requiere de algún recurso hace uso de una solicitud, pero para lograrlo se tiene que utilizar del protocolo [HTTP](https://datatracker.ietf.org/doc/html/rfc2616). Se le dice hipertexto porque el usuario puede acceder a otros recursos a través de enlaces. 
 
 La estructura en una comunicación HTTP es a través de un cliente y un servidor, donde el cliente envía diferentes solicitudes al servidor que son recibidas y procesadas para después ser devueltas al cliente, el puerto donde da lugar esta comunicación, es en el puerto 80, pero claro que puede cambiar a otro puerto diferente, Aquí también da lugar un concepto nuevo que es la URL (Localizador Uniforme de Recursos)
 

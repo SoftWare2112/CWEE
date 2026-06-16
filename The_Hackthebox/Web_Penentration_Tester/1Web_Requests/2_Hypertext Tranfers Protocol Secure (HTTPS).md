@@ -43,11 +43,11 @@ Bueno ahora explicaremos el proceso de comunicacion del protocolo HTTPS.
 
 Al utilizar ``curl``,  este gestiona de manera automática las peticiones hacia un sitio web con protocolo HTTPS, asegurando de que surja una comunicación cifrada y que los datos no queden expuestos, trabaja de la misma manera que lo haria un navegador.
 
-Pero exiten casos donde deberos probar aplicacion web en local o que no tengan un certificado ssl no valido, y cuando surja eso, __curl__ nos devolvera un mensaje de error negándonos la conexion para protegernos del ataque de ``hombre en el medio`` por intentar una comunicacion no cifrada hacia un sitio que no tiene un certificado ssl no valido.
+Pero exiten casos donde deberos probar aplicaciones web en local o que no tengan un certificado ssl valido, y cuando surja eso, __curl__ nos devolvera un mensaje de error negándonos la conexion para protegernos del ataque de ``hombre en el medio`` por intentar una comunicacion no cifrada hacia un sitio que no tiene un certificado ssl valido.
 
 ![](image/curl_error.png)
 
-En estos caso podemos utilizar la opcion __-k__ , por no tener un certificado ssl valido.
+En estos caso podemos utilizar la opcion __-k__ , para que ignore las advertencias del certificado no valido.
 
 ``curl -k https://www.inlanefreight.com ``
 
