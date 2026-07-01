@@ -1,6 +1,6 @@
-Cuando surge una comunicación entre el cliente y el servidor, se da a través de una solicitud HTTP y una respuesta HTTP (__requests y response__), donde el cliente puede ser un navegador, una aplicación móvil o incluso una herramienta como cURL, que envia una solicitud HTTP al servidor, el servidor puede ser un servidor Web como apache.
+Cuando surge una comunicación entre el cliente y el servidor, se da a través de una solicitud HTTP y una respuesta HTTP (__requests y response__), donde el cliente puede ser un navegador, una aplicación móvil, un script hecho en python para interactuar con un sitio web o incluso una herramienta como cURL, que envia una solicitud HTTP al servidor, el servidor puede ser un servidor Web como apache.
 
-El servidor por su parte, recibe esta solicitud del cliente para procesarla y ejecutar las acciones que están descritas en dicha solicitud para despues regresarle una respuesta por parte del servidor al cliente, es esta respuesta aparece un codigo de estado describiendo si la solicitud fue procesada con exito o si hubo algún error.
+El servidor por su parte, recibe esta solicitud del cliente para procesarla y ejecutar las acciones que están descritas en dicha solicitud para después regresarle una respuesta por parte del servidor al cliente, es esta respuesta aparece un codigo de estado describiendo si la solicitud fue procesada con exito o si hubo algún error.
 
 --- 
 ## HTTP requests
@@ -14,13 +14,13 @@ Analizando la imagen tenemos unos puntos importantes:
 	* LA RUTA  DEL ARCHIVO ( para obtener el archivo index.html o otro archivo)
 	* LA VERSION DE HTTP (es la versión en la que se comunican el cliente y el servidor y puede ser la 1.0, 1.1, aunque ya exiten la versiones 2 y 3)
 
-Es una estructura que aparecerá en cualquier __requets HTTP__.
+Es una estructura que aparecerá en cualquier __requests HTTP__.
 
 Esta es una de las líneas mas importantes, y es en la que nosotros interactuamos cuando hacemos hacking de aplicaciones web, pues con la aplicación de BurpSuite interceptaremos peticiones para cambiarlo de acuerdo con las necesidades de la practica.
 
 En la segunda linea tenemos:
 
-* tenemos los encabezados de la pagina web, es la información adicional que el servidor utiliza para procesar la informacion del cliente.
+* los encabezados de la pagina web, es la información adicional que el servidor utiliza para procesar la información del cliente.
 * Esta información tiene una estructura de __clave-valor__ donde los valores mas importantes son:
 	* __HOST__: que define el dominio a donde nos vamos a conectar
 	* __User-Agent__: Funciona como una carta de presentación de tu dispositivo al servidor
@@ -45,11 +45,13 @@ Bien por parte de la respuesta podremos observar que esta estructurado de la sig
 
 En la primera linea tenemos:
 - VERSION HTTP: HTTP/1.1
-- CODIGO DE RESPUESTA: 200 OK
+- CODIGO DE ESTADO: 200 OK
 
-El codigo de respuesta representa el estado de la solicitud, si la solicitud fue procesada con exito, un 200 OK o con un codigo 404 not found representa un error en la solicitud.
+El codigo de estado representa el estado de la solicitud, si la solicitud fue procesada con exito, dara un 200 OK o un codigo 404 not found representa un error en la solicitud.
 
 - Ademas tenemos información como el __Server__, __Conten-Type__, etc que representa informacion complementaria enviada por el servidor al cliente. Asi como lo vimos en la solicitud.
+
+En la segunda linea tenemos los encabezados de la respuesta o conocidos como los __response Headers__, que es informacion adiciona que le servidor le envia al cliente
 
 En la segunda linea *___que representa el cuerpo de la solicitud__* podemos tener:
 - El contenido HTML de una pagina web

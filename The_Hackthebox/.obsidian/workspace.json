@@ -4,24 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "6dab479176af0030",
+        "id": "bcd2a4c5022fe859",
         "type": "tabs",
         "children": [
           {
-            "id": "cc034c6f66d2313a",
+            "id": "8a3f18cd5b21d737",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web_Penentration_Tester/1Web_Requests/3_HTTP Requests and Response.md",
+                "file": "OBSERVACIONES 9.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3_HTTP Requests and Response"
+              "title": "OBSERVACIONES 9"
+            }
+          },
+          {
+            "id": "9db72e7cad5212c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sin título 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sin título 1"
+            }
+          },
+          {
+            "id": "2539fbd0c2071b6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NOVENA PARTE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NOVENA PARTE"
+            }
+          },
+          {
+            "id": "3132453b8508378f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sin título.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sin título"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web_Penentration_Tester/1Web_Requests/HyperText Tranfer Protocol.md",
+                "file": "OBSERVACIONES 8.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de HyperText Tranfer Protocol"
+              "title": "Enlaces entrantes de OBSERVACIONES 8"
             }
           },
           {
@@ -169,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -183,36 +226,53 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "cc034c6f66d2313a",
+  "active": "9db72e7cad5212c4",
   "lastOpenFiles": [
-    "Web_Penentration_Tester/1Web_Requests/image/devtools_network_requests.jpg",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 752711.crdownload",
-    "Pasted image 20260615200051.png",
-    "Web_Penentration_Tester/1Web_Requests/image/curl_verbose.png",
-    "Web_Penentration_Tester/1Web_Requests/1_HyperText Tranfer Protocol.md",
-    "Web_Penentration_Tester/1Web_Requests/3_HTTP Requests and Response.md",
-    "Web_Penentration_Tester/1Web_Requests/image/raw_response.png",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 838000.crdownload",
-    "Web_Penentration_Tester/1Web_Requests/2_Hypertext Tranfers Protocol Secure (HTTPS).md",
-    "Web_Penentration_Tester/1Web_Requests/image/raw_request.png",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 260066.crdownload",
-    "cURL.md",
-    "Web_Penentration_Tester/1Web_Requests/image/curl_error.png",
-    "Web_Penentration_Tester/1Web_Requests/image/curl_image.png",
-    "Web_Penentration_Tester/1Web_Requests/image/HTTPS_Flow.png",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 811108.crdownload",
-    "Web_Penentration_Tester/1Web_Requests/image/https_google.png",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 885137.crdownload",
-    "Web_Penentration_Tester/1Web_Requests/image/https_google_enc.png",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 361951.crdownload",
-    "Web_Penentration_Tester/1Web_Requests/image/https_clear.png",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 250738.crdownload",
-    "Bienvenido.md",
-    "Sin título.canvas",
+    "OBSERVACIONES 9.md",
     "Sin título 1.md",
+    "NOVENA PARTE.md",
+    "Sin título.md",
+    "OBSERVACIONES 8.md",
+    "SEPTIMA PARTE.md",
+    "OBSERVACIONES 7.md",
+    "SEXTA PARTE.md",
+    "OBSERVACIONES 6.md",
+    "Bienvenido.md",
+    "QUINTA PARTE.md",
+    "OBSERVACIONES 5.md",
+    "BASE DE DATOS.md",
+    "CUARTA PARTE.md",
+    "OBSERVACIONES 3.md",
+    "OBSERVACIONES 4.md",
+    "TERCERA PARTE.md",
+    "OBSERVACIONES 2.md",
+    "OBSERVACIONES.md",
+    "SEGUNDA PARTE.md",
+    "Sin título.canvas",
+    "Pasted image 20260615200051.png",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/4_HTTP Headers.md",
+    "Web_Penentration_Tester/2Introduction_to_Aplication_Web/Introducction.md",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/1_HyperText Tranfer Protocol.md",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/2_Hypertext Tranfers Protocol Secure (HTTPS).md",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/3_HTTP Requests and Response.md",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/devtools_network_requests.jpg",
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 752711.crdownload",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/curl_verbose.png",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/raw_response.png",
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 838000.crdownload",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/raw_request.png",
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 260066.crdownload",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/curl_error.png",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/curl_image.png",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/HTTPS_Flow.png",
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 811108.crdownload",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/https_google.png",
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 885137.crdownload",
+    "Web_Penentration_Tester/1Web_Requests/HTTP_FUNDAMENTAL/image/https_google_enc.png",
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 361951.crdownload",
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 250738.crdownload",
     "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 48890.crdownload",
-    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 564839.crdownload",
-    "Web_Penentration_Tester/1Web_Requests/image",
-    "Web_Penentration_Tester/2Introduction_to_Aplication_Web/Introducction.md"
+    "Web_Penentration_Tester/1Web_Requests/image/Sin confirmar 564839.crdownload"
   ]
 }
