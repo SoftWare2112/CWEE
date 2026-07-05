@@ -32,7 +32,13 @@ Es similar a la anterior, pues puede aparecer en la solicitudes y en las respues
 | __Content-Length__ | ``Content-Length: 385``         | Especifica el tamaño exacto del cuerpo del mensaje de lo que se esta transmitiendo y es crucial porque el servidor tendra idea de lo que va  procesar.                                                                  |
 | Content-Encoding   | ``Content-Encoding: gzip``      | Especifica que codificacion se esta utilizando en la trasnmision y es util porque al comprimir grandes volumenes de datos reducimos el peso considerablemente del mensaje.                                              |
 
+
+
+<br>
+
 --- 
+<br>
+
 ## [Requests Headers](https://datatracker.ietf.org/doc/html/rfc2616)
 
 Son encabezados enviados por el cliente en el mensaje, que no tienen ninguna relación con el contenido del mensaje que se esta transmitiendo. Y es información utilizada por el servidor.
@@ -48,6 +54,9 @@ Son encabezados enviados por el cliente en el mensaje, que no tienen ninguna rel
 Para mas información busca [aqui](https://datatracker.ietf.org/doc/html/rfc7231#section-5)
 
 ---
+
+<br>
+
 ## [Response Headers](https://datatracker.ietf.org/doc/html/rfc7231#section-7)
 
 Los encabezados de respuesta, son información enviada por el servidor al cliente que es utilizada por el cliente para aportar mas contexto a la comunicación.
@@ -59,3 +68,85 @@ Los encabezados de respuesta, son información enviada por el servidor al client
 | WWW-Authenticate | ``WWW-Authenticate: BASIC realm="localhost" `` |                                                                                                                                                                                             |
 
 Cuando nosotros tratamos de vulnerar una pagina, hacemos peticiones a los encabezados de esa pagina para ver que informacion esta exponiendo ya que en algunos casos esa informacion es critica porque muestra la version del servidor (donde podremos saber si es vulnerable a algun exploit publico) e incluso la version del sistema operativo donde se esta ejecutando.
+
+para poder visulizar los encabezados del servidor tenemos que hacer uso del comando ``curl-IL www.itsta.edu.mx``
+
+---
+
+
+<br>
+
+## [Security Header](https://owasp.org/www-project-secure-headers/)
+
+Estos tipos de encabezados de respuesta son __reglas__ creadas que protegen al servidor donde esta alojado el sitio web y que el nevagador tiene que seguir cuando realiza una conexion.
+
+| Header | Example | Description
+| :-- | :-- | :-- |
+| ``Content-Security-Policy`` | ``Content-Security-Policy: script-src 'self'`` | Este tipo de politicas de seguridad previenen ataques como [*Cross-Site-scripting*](https://en.wikipedia.org/wiki/Cross-site_scripting), al decirle al navegador, a que dominios debe permitir la conexion para cargar scripts de tipo .js |
+|``Strict-Transport-Security`` | ``Strict-Transport-Security: max-age=31536000`` | Esta politica de seguridad obliga al nevegador a solo conectarse a un sitio web, utilizando el protocolo HTTPS asegurando que los datos vayan cifrados, y en caso de que intente establecer una conexion mediante el protocolo HTTP negara la conexion, con esto evitamos que los ciberdelicuentes puedan leer y robar datos de trafico interceptado. |
+| ``eferrer-Policy`` | ``Referrer-Policy: origin`` | Establece si el navegador puede mostrar informacion a travez de la URL, evitando asi fugas de informacion. |
+
+<br>
+
+Estos es solo una parte de los encabezados que exiten y que pueden ser utilizadas por los naveadores. ademas se pueden crear encabezados personalizados segun las necesidades que se presenten. para una lista completa de encabezados busca [*AQUI*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers)
+
+---
+<BR>
+
+## cURL
+
+Si queremos visualizar los encabezados de respuesta con la herramienta cURL lo podemos hacer de la siguiente manera.
+- ``curl -I www.google.com``
+
+Esta es la forma que nosotros utilizamos para ver los encabezados del servidor y recolectar informacion para una prueba de penetracion web.
+
+![](image/curl3.png)
+
+Pero si nosotros queremos visualizar los encabezados de __repuesta__ y __el cuerpo de la respuesta__ a la vez, podemos hacerlo de la siguiente manera.
+
+- ``curl -i www.google.com``
+
+La diferencia entre ambos son las siguientes:
+
+- ``-I`` Envia una peticion __HEAD__ 
+- ``-i`` Envia cualquier petcion que nosotros le especifiquemos. Ademas de mostrar los encabezados
+- ``-v`` muestra de manera detallada la peticion que fue solicitada
+- ``-vvv`` muestra de forma mas detallada la peticion que fue realizada.
+
+
+La herramienta cURL nos permite configurar a nuestra manera los encabezados de nuestras solicitudes y lo hacemos a travez del parametro:
+
+- ``-H``
+- ``-A`` nos permite configurar el encabezado __User-Agent__
+
+Ademas tambien podemos configurar otros encabezados como las cookies, pero estos tambien tienen sus propios parametros.
+
+![](image/curl_parameter.png)
+
+<br>
+
+---
+
+<br>
+
+## Browser DevTools
+
+Por ultimo una de las herramientas que tendras disponible cuando habras tu navegador, y es __la herramienta de desarrollo__ del navegador.
+
+En esta tendremos que ir al apartado de __network__ y podremos ver todas las solicitudes que realiza en navegador al servidor web cuando reaiza la peticion __GET__.
+
+EN automatico, va clasificando cada solicutud y si selecionamos alguna de ella, podremos apreciar parametros como:
+
+- Header
+- Preview
+- Response
+- Iniciator
+- Timing
+- Adblok
+
+Aunque todas las pestanias tienen su importancia, nosotros vamos a centrarnos en la pestania __Header__ pues es ahi donde veremos detalladamente la solicitud, y ver que datos importantes podremos tomar para nuetro ataque web.
+
+![](image/devtools.png)
+
+
+
